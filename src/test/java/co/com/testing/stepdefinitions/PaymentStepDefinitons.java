@@ -10,33 +10,47 @@ import net.serenitybdd.screenplay.actions.OpenAt;
 import net.serenitybdd.screenplay.actions.OpenUrl;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.util.EnvironmentVariables;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.json.Json;
+
+import java.io.InputStream;
+import java.util.Properties;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 public class PaymentStepDefinitons {
 
+
     @Before
     public void setUp(){
         OnStage.setTheStage(new OnlineCast());
 
     }
+
+    private EnvironmentVariables  environmentVariables;
+
+    @Managed
+    private WebDriver driver;
+
+    Properties config = new Properties();
     @Given("User is on the home page")
     public void userIsOnTheHomePage() {
+        String urlWeb = environmentVariables.getProperty("environments.qa.base.url");
         OnStage.theActorCalled("Alejandro").wasAbleTo(
-                Open.url("https://shop.demoqa.com/")
+                Open.url(urlWeb)
         );
-        getDriver().manage().window().maximize();
+            getDriver().manage().window().maximize();
     }
-
-
     @When("User check the the product {string}")
     public void userCheckTheTheProduct(String product) {
         System.out.println("el producto es "+ product);
-        theActorInTheSpotlight().attemptsTo(
-                CheckProduct.itemNameSpace(product)
-        );
-        getDriver().getWindowHandle();
+//        theActorInTheSpotlight().attemptsTo(
+//                CheckProduct.itemNameSpace(product)
+//        );
+//        getDriver().getWindowHandle();
     }
 
     @Then("Payment should be succesful")
