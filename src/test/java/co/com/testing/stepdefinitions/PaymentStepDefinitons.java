@@ -5,6 +5,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actions.OpenAt;
 import net.serenitybdd.screenplay.actions.OpenUrl;
@@ -39,7 +40,10 @@ public class PaymentStepDefinitons {
     @Given("User is on the home page")
     public void userIsOnTheHomePage() {
         String urlWeb = environmentVariables.getProperty("environments.qa.base.url");
-        OnStage.theActorCalled("Alejandro").wasAbleTo(
+
+
+        OnStage.theActorCalled("Alejandro").can(BrowseTheWeb.with(driver));
+        OnStage.theActorInTheSpotlight().wasAbleTo(
                 Open.url(urlWeb)
         );
             getDriver().manage().window().maximize();
