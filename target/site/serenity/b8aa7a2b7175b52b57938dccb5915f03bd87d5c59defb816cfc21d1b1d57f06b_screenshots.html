@@ -128,7 +128,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-08-2022 09:30</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-08-2022 16:50</span>
     <br style="clear:left"/>
 </div>
 
@@ -171,9 +171,9 @@ For make a payment inside page
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Payment
+                                <span class="failing-color">Payment
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -190,13 +190,83 @@ For make a payment inside page
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.testing.tasks.PutUserInformation.performAs(PutUserInformation.java:25)<br />co.com.testing.stepdefinitions.PaymentStepDefinitons.userPutAllInformation(PaymentStepDefinitons.java:64)<br />cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)<br />cucumber.runner.TestStep.executeStep(TestStep.java:63)<br />cucumber.runner.TestStep.run(TestStep.java:49)<br />cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)<br />cucumber.runner.TestCase.run(TestCase.java:44)<br />cucumber.runner.Runner.runPickle(Runner.java:40)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.cssSelector: //input[@id=billing_last_name'] to be enabled (tried for 9 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.testing.tasks.PutUserInformation.performAs(PutUserInformation.java :25)<br />co.com.testing.stepdefinitions.PaymentStepDefinitons.userPutAllInformation(PaymentStepDefinitons.java :64)<br />cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :50)<br />cucumber.runner.TestStep.executeStep(TestStep.java :63)<br />cucumber.runner.TestStep.run(TestStep.java :49)<br />cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java :43)<br />cucumber.runner.TestCase.run(TestCase.java :44)<br />cucumber.runner.Runner.runPickle(Runner.java :40)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource1985576829195914510.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="7a92e9a2be30b83ee1df798cec1915ae46fba483fdf7c08eab8b06c34f19cafe.png" title=" Given User is on the home page" width="1312"/>
-                <img src="7a92e9a2be30b83ee1df798cec1915ae46fba483fdf7c08eab8b06c34f19cafe.png" title=" Alejandro opens the https://shop.demoqa.com/" width="1312"/>
-                <img src="7a92e9a2be30b83ee1df798cec1915ae46fba483fdf7c08eab8b06c34f19cafe.png" title=" Given User is on the home page (completed)" width="1312"/>
-                <img src="7a92e9a2be30b83ee1df798cec1915ae46fba483fdf7c08eab8b06c34f19cafe.png" title=" When User check the the product &quot;black lux graphic t-shirt&quot;" width="1312"/>
-                <img src="7a92e9a2be30b83ee1df798cec1915ae46fba483fdf7c08eab8b06c34f19cafe.png" title=" Then Payment should be succesful: <span class='success-color'>SUCCESS</span>" width="1312"/>
+                <img src="e5a26bdd55f11e6571c35fc935caac4d9a39ade9710c5f02a39a790414167809.png" title=" Given User is on the home page" width="1312"/>
+                <img src="e5a26bdd55f11e6571c35fc935caac4d9a39ade9710c5f02a39a790414167809.png" title=" Alejandro opens the https://shop.demoqa.com/" width="1312"/>
+                <img src="e5a26bdd55f11e6571c35fc935caac4d9a39ade9710c5f02a39a790414167809.png" title=" Given User is on the home page (completed)" width="1312"/>
+                <img src="bf43d91c3be03451b6899800843b711a78e38885d14b01338b3155b5bb5cefa7.png" title=" When User check the product &quot;black lux graphic t-shirt&quot;" width="1312"/>
+                <img src="bf43d91c3be03451b6899800843b711a78e38885d14b01338b3155b5bb5cefa7.png" title=" Alejandro check product" width="1312"/>
+                <img src="bf43d91c3be03451b6899800843b711a78e38885d14b01338b3155b5bb5cefa7.png" title=" Alejandro clicks on Put information" width="1312"/>
+                <img src="d5a349ec581ee8ede56f36741c6c44f6063d3a790494e6c016755e2ea5e41897.png" title=" Alejandro clicks on Put information (completed)" width="1312"/>
+                <img src="d5a349ec581ee8ede56f36741c6c44f6063d3a790494e6c016755e2ea5e41897.png" title=" Alejandro enters 'black lux graphic t-shirt' into Product" width="1312"/>
+                <img src="104f1e617adb92a3b83e9265a1dec18b5c51f389ab60987d8b69be851bafd1da.png" title=" Alejandro enters 'black lux graphic t-shirt' into Product (completed)" width="1312"/>
+                <img src="104f1e617adb92a3b83e9265a1dec18b5c51f389ab60987d8b69be851bafd1da.png" title=" Alejandro selects black in PRODUCT COLOR" width="1312"/>
+                <img src="ee8a5244693ca1464a446dbd0f76a2549a222215c449dff648b97296b37a708c.png" title=" Alejandro selects black in PRODUCT COLOR (completed)" width="1312"/>
+                <img src="ee8a5244693ca1464a446dbd0f76a2549a222215c449dff648b97296b37a708c.png" title=" Alejandro selects 32 in PRODUCT SIZE" width="1312"/>
+                <img src="30c3a417c1eba42eda6e064241bfbd85e2171cc50e5e98f4f778c6aeaba4315b.png" title=" Alejandro selects 32 in PRODUCT SIZE (completed)" width="1312"/>
+                <img src="2895fe151868b886243580a5c428e5d272bf6e1df14de30f899c59521073b8b5.png" title=" Alejandro clicks on PRODUCT SIZE" width="1312"/>
+                <img src="00402e704b9eb0913fd603deaf4acb811b1060317b120d28ce50515fcd4609a7.png" title=" Alejandro clicks on PRODUCT SIZE (completed)" width="1312"/>
+                <img src="00402e704b9eb0913fd603deaf4acb811b1060317b120d28ce50515fcd4609a7.png" title=" Alejandro clicks on View cart" width="1312"/>
+                <img src="21904799787b5d7fa423027a19e6ac3ad07b7ce42b239b431ee73fb312901700.png" title=" Alejandro clicks on View cart (completed)" width="1312"/>
+                <img src="21904799787b5d7fa423027a19e6ac3ad07b7ce42b239b431ee73fb312901700.png" title=" Alejandro clicks on View cart checkout" width="1312"/>
+                <img src="560472c068b45265fc33644c2ceae3e34e7331635bc098cefbefca82302ac6ec.png" title=" Alejandro clicks on View cart checkout (completed)" width="1312"/>
+                <img src="560472c068b45265fc33644c2ceae3e34e7331635bc098cefbefca82302ac6ec.png" title=" Alejandro check product (completed)" width="1312"/>
+                <img src="560472c068b45265fc33644c2ceae3e34e7331635bc098cefbefca82302ac6ec.png" title=" When User check the product &quot;black lux graphic t-shirt&quot; (completed)" width="1312"/>
+                <img src="560472c068b45265fc33644c2ceae3e34e7331635bc098cefbefca82302ac6ec.png" title=" When User put all information
+| firstname | lastname | country | state | phone | email |
+| alejandro | aguirre | Colombia | Delhi | 12345567 | testing@proof.com |" width="1312"/>
+                <img src="560472c068b45265fc33644c2ceae3e34e7331635bc098cefbefca82302ac6ec.png" title=" Alejandro put user information" width="1312"/>
+                <img src="2eca60e5cfed832b5cf83b82c6cdaa46ceeb9b693f226b4636f70c3dbe653a71.png" title=" Alejandro enters 'alejandro' into User's Name" width="1312"/>
+                <img src="5ed355f5674f27757d4379e11342e687536e606d6e6581166f33ff0b9cec82c5.png" title=" Alejandro enters 'alejandro' into User's Name (completed)" width="1312"/>
+                <img src="5ed355f5674f27757d4379e11342e687536e606d6e6581166f33ff0b9cec82c5.png" title=" Alejandro enters 'aguirre' into User's LastName" width="1312"/>
+                <img src="143b1d8516a67475db8ef30388b3a6033755c4a39fbd357a601f606042e4b582.png" title=" Alejandro enters 'aguirre' into User's LastName (completed): <span class='failing-color'>FAILURE</span>" width="1312"/>
             </div>
         </div>
 

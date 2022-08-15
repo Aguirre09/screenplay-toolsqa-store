@@ -1,16 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Payment in Store" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-10T14:30:25" hostname="alejandro-X550CC" time="7.497">
+<testsuite name="Payment in Store" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-08-15T21:50:56" hostname="alejandro-X550CC" time="29.212">
   <properties/>
-  <testcase name="Payment" classname="Payment in Store" time="7.497"/>
+  <testcase name="Payment" classname="Payment in Store" time="29.212">
+    <failure message="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1005)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.CGLIB$performAs$0(&lt;generated&gt;)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1$$FastClassByCGLIB$$da8429ac.invoke(&lt;generated&gt;)
+	at app//net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.performAs(&lt;generated&gt;)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:204)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)
+	at app//co.com.testing.tasks.PutUserInformation.performAs(PutUserInformation.java:25)
+	at app//co.com.testing.tasks.PutUserInformation$$EnhancerByCGLIB$$f4aa0ab9.CGLIB$performAs$0(&lt;generated&gt;)
+	at app//co.com.testing.tasks.PutUserInformation$$EnhancerByCGLIB$$f4aa0ab9$$FastClassByCGLIB$$e67b919d.invoke(&lt;generated&gt;)
+	at app//net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at app//co.com.testing.tasks.PutUserInformation$$EnhancerByCGLIB$$f4aa0ab9.performAs(&lt;generated&gt;)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:204)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)
+	at app//co.com.testing.stepdefinitions.PaymentStepDefinitons.userPutAllInformation(PaymentStepDefinitons.java:64)
+	at ✽.User put all information(src/test/resources/features/payment_store.feature:13)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: //input[@id=billing_last_name'] to be enabled (tried for 9 second(s) with 100 milliseconds interval)
+	at app//org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1002)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.CGLIB$performAs$0(&lt;generated&gt;)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1$$FastClassByCGLIB$$da8429ac.invoke(&lt;generated&gt;)
+	at app//net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.performAs(&lt;generated&gt;)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:204)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)
+	at app//co.com.testing.tasks.PutUserInformation.performAs(PutUserInformation.java:25)
+	at app//co.com.testing.tasks.PutUserInformation$$EnhancerByCGLIB$$f4aa0ab9.CGLIB$performAs$0(&lt;generated&gt;)
+	at app//co.com.testing.tasks.PutUserInformation$$EnhancerByCGLIB$$f4aa0ab9$$FastClassByCGLIB$$e67b919d.invoke(&lt;generated&gt;)
+	at app//net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at app//co.com.testing.tasks.PutUserInformation$$EnhancerByCGLIB$$f4aa0ab9.performAs(&lt;generated&gt;)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:223)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:204)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:161)
+	at app//co.com.testing.stepdefinitions.PaymentStepDefinitons.userPutAllInformation(PaymentStepDefinitons.java:64)
+	at java.base@17.0.3/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.3/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.3/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.3/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//cucumber.runtime.Utils$1.call(Utils.java:26)
+	at app//cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at app//cucumber.runtime.Utils.invoke(Utils.java:20)
+	at app//cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
+	at app//cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at app//cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at app//cucumber.runner.TestStep.run(TestStep.java:49)
+	at app//cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at app//cucumber.runner.TestCase.run(TestCase.java:44)
+	at app//cucumber.runner.Runner.runPickle(Runner.java:40)
+	at app//cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at app//cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at app//net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:193)
+	at app//net.serenitybdd.cucumber.CucumberWithSerenity.runChild(CucumberWithSerenity.java:64)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//net.serenitybdd.cucumber.CucumberWithSerenity$1.evaluate(CucumberWithSerenity.java:202)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@17.0.3/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.3/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.3/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.3/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=104.0.5112.79)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'alejandro-X550CC', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-35-generic', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /tmp/.com.google.Chrome.RKHyws}, goog:chromeOptions: {debuggerAddress: localhost:46883}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2100385c26be96590399d978b1a2eca9
+*** Element info: {Using=css selector, value=//input[@id=billing_last_name']}
+	at jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
+	at java.base@17.0.3/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.3/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base@17.0.3/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at app//org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at app//net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at app//net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:16)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:210)
+	at app//net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at app//net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 90 more
+</failure>
+  </testcase>
   <system-out><![CDATA[
 ?[32m.?[0m
 
 el producto es black lux graphic t-shirt
+
+el product en task es : black lux graphic t-shirt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?[32m.?[0m
 
-THEN
-?[32m.?[0m
-]]></system-out>
+
+el nombre es : alejandro
+
+
+
+
+?[31mF?[0m?[36m-?[0m]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
@@ -21,13 +200,13 @@ THEN
 
 TEST STARTED: Payment
 -------------------------------------------------------------------(payment-in-store;payment)
-ago. 10, 2022 9:30:26 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+ago. 15, 2022 4:50:57 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 18111
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 5194
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-ago. 10, 2022 9:30:27 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+ago. 15, 2022 4:50:58 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

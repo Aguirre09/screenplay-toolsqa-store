@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Payment in Store" skipped="0" tests="1" time="7.49" timestamp="2022-08-10 09:30:25"><testcase name="Payment"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Payment in Store" skipped="0" tests="1" time="29.2" timestamp="2022-08-15 04:50:56"><testcase name="Payment"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled
+co.com.testing.tasks.PutUserInformation.performAs(PutUserInformation.java:25)
+co.com.testing.stepdefinitions.PaymentStepDefinitons.userPutAllInformation(PaymentStepDefinitons.java:64)
+cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+cucumber.runner.TestStep.executeStep(TestStep.java:63)
+cucumber.runner.TestStep.run(TestStep.java:49)
+cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+cucumber.runner.TestCase.run(TestCase.java:44)
+cucumber.runner.Runner.runPickle(Runner.java:40)
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</system-err></testcase></testsuite>
